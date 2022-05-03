@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="M_Indicator_System.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <style>
+        .container-fluid
+        {
+            background-color:red;
+        }
+        li {
+            color:white;
+        }
+        
+       
+        .auto-style1 {
+           
+            height: 830px;
+            width:100%;
+        }
+        
+       
+    </style>
+</head>
+<body >   
+    
+     <div>            
+         <div>
+                <asp:Panel ID="PAdminTr" runat="server" Visible="false">
+                        <nav class="navbar navbar-inverse">
+                            <div class="container-fluid">                                
+                                <ul class="nav navbar-nav navbar-left">
+                                    <li><a href="HomePage.aspx" style="color:white;font-weight:bold; font-size:medium"><span class="glyphicon glyphicon-home"></span></a></li>
+                                    <li><a href="ManageStation.aspx" style="color:white;font-weight:bold; font-size:medium">Manage Train Station</a></li>
+                                    <li><a href="ManageTrainTt.aspx" style="color:white;font-weight:bold; font-size:medium">Manage Train Timetable</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li ><a href="Login.aspx" style="color:white;font-weight:bold; font-size:medium"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                    </asp:Panel>
+             <asp:Panel ID="PAdminBus" runat="server" Visible="false">
+                        <nav class="navbar navbar-inverse">
+                            <div class="container-fluid">                                
+                                <ul class="nav navbar-nav navbar-left">
+                                    <li><a href="HomePage.aspx" style="color:white;font-weight:bold; font-size:medium"><span class="glyphicon glyphicon-home"></span></a></li>
+                                    <li><a href="ManageBusStops.aspx" style="color:white;font-weight:bold; font-size:medium">Manage Bus Stop</a></li>
+                                    <li><a href="ManageBusNo.aspx" style="color:white;font-weight:bold; font-size:medium">Manage Bus No.</a></li>                                   
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li ><a href="Login.aspx" style="color:white;font-weight:bold; font-size:medium"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                    </asp:Panel>
+                <asp:Panel ID="PLogin" runat="server" Visible="false">
+                        <nav class="navbar navbar-inverse">
+                            <div class="container-fluid">                                
+                                <ul class="nav navbar-nav ">
+                                    <li><a href="#" style="color:white;font-weight:bold; font-size:medium">Home</a></li>
+                                    <li><a href="#" style="color:white;font-weight:bold; font-size:medium">About Us</a></li>
+                                    <li><a href="Login.aspx" style="color:white;font-weight:bold; font-size:medium">Login</a></li>
+                                    <li><a href="#" style="color:white;font-weight:bold; font-size:medium">Contact Us</a></li>                                   
+                                </ul>                               
+                            </div>
+                        </nav>
+                </asp:Panel>
+             <asp:Panel ID="PTrain" runat="server" Visible="false">
+                        <nav class="navbar navbar-inverse">
+                            <div class="container-fluid">                                
+                                <ul class="nav navbar-nav ">
+                                    <li><a href="HomePage.aspx" style="color:white;font-weight:bold; font-size:medium"><span class="glyphicon glyphicon-home"></span></a></li>
+                                    <li><a href="#" style="color:white;font-weight:bold; font-size:medium">Local Train Details</a></li>
+                                </ul>    
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li ><a href="Login.aspx" style="color:white;font-weight:bold; font-size:medium"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                </asp:Panel>
+             <asp:Panel ID="PBus" runat="server" Visible="false">
+                        <nav class="navbar navbar-inverse">
+                            <div class="container-fluid">                                
+                                <ul class="nav navbar-nav ">
+                                    <li><a href="HomePage.aspx" style="color:white;font-weight:bold; font-size:medium"><span class="glyphicon glyphicon-home"></span></a></li>
+                                    <li><a href="#" style="color:white;font-weight:bold; font-size:medium">Bus Details</a></li>
+                                </ul>    
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li ><a href="Login.aspx" style="color:white;font-weight:bold; font-size:medium"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                </asp:Panel>
+            </div>            
+        </div>
+     <form id="form1" runat="server" >
+            <div align="center" style="background-image:url('Images/Bckgrnd3.jpg'); background-repeat:no-repeat; " class="auto-style1" >
+                <asp:Panel ID="MainP" runat="server" BackColor="White"   height="100%" width="70%">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>             
+                </asp:Panel>
+            </div>
+    </form>
+</body>
+</html>
